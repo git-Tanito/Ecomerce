@@ -29,6 +29,7 @@ a {
   font-weight: 900;
   padding: 1rem;
   transition: background-color 0.2s ease-in-out;
+  text-align: center;
 }
 .btn:hover {
   background-color: #769c02;
@@ -64,6 +65,9 @@ h3 {
 /*utilidades*/
 .text-center {
   text-align: center;
+}
+.max-width-30 {
+  max-width: 30rem;
 }
 
 /*header y navegación*/
@@ -295,3 +299,24 @@ h3 {
 .entrada_meta p {
   font-weight: 900;
 }
+/*Entrada blog*/
+
+.contenido-entrada-blog {
+  width: 60rem;
+  margin: 0 auto;
+}
+/*Galeria*/
+
+.galeria {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.galeria img {
+  height: 35rem;
+  width: 40rem;
+  object-fit: cover;
+}
+/*Contacto*/
