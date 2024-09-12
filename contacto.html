@@ -35,7 +35,7 @@
     <main class="contenido_principal contenedor">
         <h2 class="text-center">Contacto</h2>
 
-        <form>
+        <form class="formulario">
             <fieldset>
                 <legend>Tus Datos</legend>
 
@@ -70,7 +70,7 @@
             <fieldset>
                 <legend>País</legend>
                 <div class="campo">
-                    <label for="pais">país</label>
+                    <label for="pais">país :</label>
                     <select name="" id="pais">
                         <option selected disabled>-- Seleccione --</option>
                         <option value="MX">Mexico</option>
@@ -86,7 +86,37 @@
 
             <fieldset>
                 <legend>Información Extra</legend>
+
+                <div class="campo">
+                    <label for="cliente">cliente </label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="provedor">Provedor </label>
+                    <input id="provedor" type="radio" name="tipo" value="provedor">
+                </div>
+
+
+                <div class="campo">
+                    <label for="categoria">Categorías de Interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Oficina">
+                        <option value="Recamara">
+                        <option value="Exterior">
+                    </datalist>
+                </div>
+
+
+
+
+
+
             </fieldset>
+            <input type="text" class="btn" value="Enviar Formulario">
+
         </form>
 
 

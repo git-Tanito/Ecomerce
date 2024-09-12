@@ -30,9 +30,11 @@ a {
   padding: 1rem;
   transition: background-color 0.2s ease-in-out;
   text-align: center;
+  border: none;
 }
 .btn:hover {
   background-color: #769c02;
+  cursor: pointer;
 }
 
 img {
@@ -320,3 +322,35 @@ h3 {
   object-fit: cover;
 }
 /*Contacto*/
+.formulario {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+fieldset {
+  border: 2px solid #dadace;
+  margin-bottom: 3rem;
+}
+legend {
+  background-color: #024e7a;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.campo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.campo label {
+  flex-basis: 10rem;
+}
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select {
+  flex: 1;
+  border: solid 1px#e1e1e1;
+  padding: 1rem;
+}
